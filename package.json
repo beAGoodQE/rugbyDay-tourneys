@@ -1,8 +1,8 @@
 {
-  "name": "rugbydaytourneys",
+  "name": "rugbyday",
   "private": true,
   "version": "1.0.0",
-  "description": "rugbyDay-tourneys",
+  "description": "rugbyDay",
   "scripts": {
     "lint": "eslint **/{aura,lwc}/**",
     "test": "npm run test:unit",

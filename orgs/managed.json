@@ -1,5 +1,5 @@
 {
-  "orgName": "rugbyDay-tourneys - Managed Org",
+  "orgName": "rugbyDay - Managed Org",
   "edition": "Developer",
   "settings": {
     "lightningExperienceSettings": {
@@ -16,6 +16,11 @@
       "sessionSettings": {
         "forceRelogin": false
       }
+    }
+  },
+  "objectSettings": {
+    "account": {
+        "defaultRecordType": "default"
     }
   }
 }

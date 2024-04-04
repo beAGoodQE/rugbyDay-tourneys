@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expenses_must_be_a_negative_amount</fullName>
+    <active>true</active>
+    <description>Expenses must be a negative amount.</description>
+    <errorConditionFormula>RecordType.Name = &apos;Expense&apos; &amp;&amp; Amount &gt; 0</errorConditionFormula>
+    <errorMessage>Expenses must be a negative amount.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relation_Type__c</fullName>
+    <description>The relation to the Club (current player, referee, etc)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The relation to the Club (current player, referee, etc)</inlineHelpText>
+    <label>Relation Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Active Player</fullName>
+                <default>false</default>
+                <label>Active Player</label>
+            </value>
+            <value>
+                <fullName>Old Boy</fullName>
+                <default>false</default>
+                <label>Old Boy</label>
+            </value>
+            <value>
+                <fullName>Volunteer</fullName>
+                <default>false</default>
+                <label>Volunteer</label>
+            </value>
+            <value>
+                <fullName>Friend of SRFC</fullName>
+                <default>false</default>
+                <label>Friend of SRFC</label>
+            </value>
+            <value>
+                <fullName>Board Member</fullName>
+                <default>false</default>
+                <label>Board Member</label>
+            </value>
+            <value>
+                <fullName>Referee</fullName>
+                <default>false</default>
+                <label>Referee</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

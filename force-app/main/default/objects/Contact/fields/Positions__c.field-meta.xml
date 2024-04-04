@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Positions__c</fullName>
+    <description>Positions the player can play</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Positions the player can play</inlineHelpText>
+    <label>Positions</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Rugby_Positions</valueSetName>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Email_Recipient__c</fullName>
+    <description>Invoice Email Recipient</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Invoice Email Recipient</inlineHelpText>
+    <label>Invoice Email Recipient</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,20 +1,29 @@
 minimum_cumulusci_version: '3.76.0'
 project:
-    name: rugbyDaytourneys
+    name: rugbyDay
     package:
-        name: rugbyDay-tourneys
+        name: rugbyDay
         
         api_version: '58.0'
     git:
         default_branch: 'main'
     source_format: sfdx
-    
+    dependencies:
       
+        - github: "https://github.com/SalesforceFoundation/NPSP"
 
 tasks:
     run_tests:
         options:
             required_org_code_coverage_percent: 75
+
+flows:
+    release_unlocked_beta:
+        steps:
+            1:
+                task: create_package_version
+                options:
+                    create_unlocked_dependency_packages: True
 
 orgs:
     scratch:

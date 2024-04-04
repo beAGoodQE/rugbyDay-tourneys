@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shirt_Size__c</fullName>
+    <description>Shirt Size, typically used for ordering club swag and shirts</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Shirt Size, typically used for ordering club swag and shirts</inlineHelpText>
+    <label>Shirt Size</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Shirt_Size</valueSetName>
+    </valueSet>
+</CustomField>

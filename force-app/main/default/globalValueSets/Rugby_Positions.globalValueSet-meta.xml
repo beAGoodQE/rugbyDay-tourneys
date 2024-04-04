@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Loosehead Prop</fullName>
+        <default>false</default>
+        <label>Loosehead Prop</label>
+    </customValue>
+    <customValue>
+        <fullName>Hooker</fullName>
+        <default>false</default>
+        <label>Hooker</label>
+    </customValue>
+    <customValue>
+        <fullName>Tighthead Prop</fullName>
+        <default>false</default>
+        <label>Tighthead Prop</label>
+    </customValue>
+    <customValue>
+        <fullName>Lock</fullName>
+        <default>false</default>
+        <label>Lock</label>
+    </customValue>
+    <customValue>
+        <fullName>Blindside Flanker</fullName>
+        <default>false</default>
+        <label>Blindside Flanker</label>
+    </customValue>
+    <customValue>
+        <fullName>Openside Flanker</fullName>
+        <default>false</default>
+        <label>Openside Flanker</label>
+    </customValue>
+    <customValue>
+        <fullName>8 Man</fullName>
+        <default>false</default>
+        <label>8 Man</label>
+    </customValue>
+    <customValue>
+        <fullName>Scrum-half</fullName>
+        <default>false</default>
+        <label>Scrum-half</label>
+    </customValue>
+    <customValue>
+        <fullName>Fly-half</fullName>
+        <default>false</default>
+        <label>Fly-half</label>
+    </customValue>
+    <customValue>
+        <fullName>Left Wing</fullName>
+        <default>false</default>
+        <label>Left Wing</label>
+    </customValue>
+    <customValue>
+        <fullName>Inside Center</fullName>
+        <default>false</default>
+        <label>Inside Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Outside Center</fullName>
+        <default>false</default>
+        <label>Outside Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Right Wing</fullName>
+        <default>false</default>
+        <label>Right Wing</label>
+    </customValue>
+    <customValue>
+        <fullName>Fullback</fullName>
+        <default>false</default>
+        <label>Fullback</label>
+    </customValue>
+    <description>Rugby Positions 1 to 15</description>
+    <masterLabel>Rugby Positions</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

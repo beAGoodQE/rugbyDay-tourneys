@@ -1,5 +1,5 @@
 {
-  "orgName": "rugbyDay-tourneys - Unmanaged Org",
+  "orgName": "rugbyDay - Unmanaged Org",
   "edition": "Developer",
   "settings": {
     "lightningExperienceSettings": {
@@ -19,6 +19,11 @@
     },
     "languageSettings": {
       "enableTranslationWorkbench": true
+    }
+  },
+  "objectSettings": {
+    "account": {
+        "defaultRecordType": "default"
     }
   }
 }
