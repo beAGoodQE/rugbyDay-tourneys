@@ -3,14 +3,12 @@ project:
     name: rugbyDay
     package:
         name: rugbyDay
-        
-        api_version: '58.0'
+        api_version: '59.0'
     git:
         default_branch: 'main'
     source_format: sfdx
     dependencies:
-      
-        - github: "https://github.com/SalesforceFoundation/NPSP"
+        - github: "https://github.com/beAGoodQE/rugbyDay"
 
 tasks:
     run_tests:
