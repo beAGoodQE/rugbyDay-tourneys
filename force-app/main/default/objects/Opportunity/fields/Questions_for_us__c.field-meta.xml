@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Questions_for_us__c</fullName>
+    <description>Online Tourney Registration field, team asking us a question</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Online Tourney Registration field, team asking us a question</inlineHelpText>
+    <label>Questions for us?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

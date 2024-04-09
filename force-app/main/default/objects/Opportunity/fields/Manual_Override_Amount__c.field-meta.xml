@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manual_Override_Amount__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Amount will auto-populate depending on number of teams entered. Check this box to override that value (discount or free entries, etc)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Amount will auto-populate depending on number of teams entered. Check this box to override that value (discount or free entries, etc)</inlineHelpText>
+    <label>Manual Override Amount</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

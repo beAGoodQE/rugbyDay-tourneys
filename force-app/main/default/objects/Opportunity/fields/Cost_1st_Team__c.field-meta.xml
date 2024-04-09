@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cost_1st_Team__c</fullName>
+    <description>Cost of 1st team. Directly copied from the same field on Campaign record</description>
+    <externalId>false</externalId>
+    <formula>Campaign.Cost_1st_Team__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Cost of 1st team. Directly copied from the same field on Campaign record</inlineHelpText>
+    <label>Cost - 1st Team</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

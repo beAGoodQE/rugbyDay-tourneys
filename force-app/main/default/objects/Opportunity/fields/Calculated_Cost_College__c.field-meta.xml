@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Calculated_Cost_College__c</fullName>
+    <description>If the sum of Mens_College_Club_Small__c, Mens_College_Open_Large__c, Mens_College_Social__c, and Womens_College__c is equal to 0, the formula returns $0.
+Cost Calculation:
+If there&apos;s only one team (i.e., the sum is equal to 1), it returns the cost for the first team (Cost_1st_Team__c).
+If there are multiple teams (sum is greater than 1), it calculates the cost based on the first team cost and the additional teams cost (Cost_Additional_Teams__c), adjusting for the first team&apos;s cost already counted</description>
+    <externalId>false</externalId>
+    <formula>IF(
+(Mens_College_Club_Small__c + Mens_College_Open_Large__c +
+Mens_College_Social__c + Womens_College__c) == 0,
+0,
+IF(
+(Mens_College_Club_Small__c + Mens_College_Open_Large__c +
+Mens_College_Social__c + Womens_College__c) == 1,
+Cost_1st_Team__c,
+(Cost_1st_Team__c + ((Mens_College_Club_Small__c +
+Mens_College_Open_Large__c + Mens_College_Social__c +
+Womens_College__c) - 1) * Cost_Additional_Teams__c)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Calculated dynamically from number of teams entered and cost per team</inlineHelpText>
+    <label>Calculated Cost - College</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>
