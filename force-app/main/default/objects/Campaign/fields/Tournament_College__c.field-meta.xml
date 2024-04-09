@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tournament_College__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Designates College Summer 7&apos;s Tournament</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Designates College Summer 7&apos;s Tournament</inlineHelpText>
+    <label>Tournament - College</label>
+    <type>Checkbox</type>
+</CustomField>
