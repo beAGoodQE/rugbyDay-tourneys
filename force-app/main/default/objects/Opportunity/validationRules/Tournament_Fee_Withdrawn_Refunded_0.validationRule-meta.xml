@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tournament_Fee_Withdrawn_Refunded_0</fullName>
+    <active>true</active>
+    <description>Opportunity Tournament Fee with Stage is &quot;Withdrawn - Refunded&quot; or &quot;Closed Lost&quot; should have $0 Amount</description>
+    <errorConditionFormula>AND(
+RecordType.Name = &apos;Tournament Fee&apos;,
+OR (
+ISPICKVAL(StageName, &apos;Withdrawn - Refunded&apos;),
+ISPICKVAL(StageName, &quot;Closed Lost&quot;)
+),
+Amount &lt;&gt; 0
+)</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>Opportunity Tournament Fee with Stage &quot;Withdrawn - Refunded&quot; or &quot;Closed Lost&quot; should have $0 Amount and no values in Team Entries (or zero).</errorMessage>
+</ValidationRule>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>60.0</apiVersion>
-    <description>Flow for College Tourney</description>
+    <apiVersion>57.0</apiVersion>
+    <description>Used to capture online registrations for Men&apos;s and Women&apos;s 7&apos;s tournaments</description>
     <environments>Default</environments>
-    <interviewLabel>Create Tournament Entry Lead - College {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Create Tournament Entry Lead - College</label>
+    <interviewLabel>Create Tournament Entry Lead - Men&apos;s {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Create Tournament Entry Lead - Men&apos;s</label>
     <loops>
         <description>TBD</description>
         <name>DocLoopToRelate</name>
@@ -49,21 +49,9 @@
             <targetReference>File_Upload_Screen</targetReference>
         </connector>
         <inputAssignments>
-            <field>Athletic_Director__c</field>
-            <value>
-                <elementReference>Athletic_Director_Input</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Club_Name__c</field>
-            <value>
-                <elementReference>College_Alt_Name_Input</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
             <field>Company</field>
             <value>
-                <elementReference>College_Name_Input</elementReference>
+                <elementReference>Club_Name_Input</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -97,21 +85,33 @@
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>Mens_College_Club_Small__c</field>
+            <field>Mens_Club__c</field>
             <value>
-                <elementReference>Mens_College_Club_Small</elementReference>
+                <elementReference>Mens_Club</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>Mens_College_Open_Large__c</field>
+            <field>Mens_EGU__c</field>
             <value>
-                <elementReference>Mens_College_Open_Large</elementReference>
+                <elementReference>Mens_EGU</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>Mens_College_Social__c</field>
+            <field>Mens_NSCS__c</field>
             <value>
-                <elementReference>Mens_College_Social</elementReference>
+                <elementReference>Mens_NSCS</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Mens_Open__c</field>
+            <value>
+                <elementReference>Mens_Open</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Mens_Social__c</field>
+            <value>
+                <elementReference>Mens_Social</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -151,9 +151,15 @@
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>Womens_College__c</field>
+            <field>Womens_Club__c</field>
             <value>
-                <elementReference>Womens_College</elementReference>
+                <elementReference>Womens_Club</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Womens_Social__c</field>
+            <value>
+                <elementReference>Womens_Social</elementReference>
             </value>
         </inputAssignments>
         <object>Lead</object>
@@ -205,11 +211,11 @@
             <field>Name</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>2024 Saratoga College 7&apos;s - Revenue</stringValue>
+                <stringValue>2024 Saratoga Summer 7&apos;s - Revenue</stringValue>
             </value>
         </filters>
         <filters>
-            <field>Tournament_College__c</field>
+            <field>Tournament_Men_s__c</field>
             <operator>EqualTo</operator>
             <value>
                 <booleanValue>true</booleanValue>
@@ -320,28 +326,12 @@
                     <fieldType>DisplayText</fieldType>
                 </fields>
                 <fields>
-                    <name>College_Name_Input</name>
+                    <name>Club_Name_Input</name>
                     <dataType>String</dataType>
-                    <fieldText>Name of College / University</fieldText>
+                    <fieldText>Club Name</fieldText>
                     <fieldType>InputField</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>true</isRequired>
-                </fields>
-                <fields>
-                    <name>College_Alt_Name_Input</name>
-                    <dataType>String</dataType>
-                    <fieldText>Club Name (If Applicable)</fieldText>
-                    <fieldType>InputField</fieldType>
-                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
-                    <isRequired>false</isRequired>
-                </fields>
-                <fields>
-                    <name>Athletic_Director_Input</name>
-                    <dataType>String</dataType>
-                    <fieldText>Athletic Director (If not POC)</fieldText>
-                    <fieldType>InputField</fieldType>
-                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
-                    <isRequired>false</isRequired>
                 </fields>
                 <fields>
                     <name>Email_Receive_Invoice_Input</name>
@@ -397,48 +387,84 @@
                     <fieldType>DisplayText</fieldType>
                 </fields>
                 <fields>
-                    <name>Mens_College_Open_Large</name>
+                    <name>Mens_Club</name>
                     <dataType>Number</dataType>
                     <defaultValue>
                         <numberValue>0.0</numberValue>
                     </defaultValue>
-                    <fieldText>Men&apos;s College Open (Large)</fieldText>
+                    <fieldText>Men&apos;s Club</fieldText>
                     <fieldType>InputField</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>true</isRequired>
                     <scale>0</scale>
                 </fields>
                 <fields>
-                    <name>Mens_College_Club_Small</name>
+                    <name>Mens_Open</name>
                     <dataType>Number</dataType>
                     <defaultValue>
                         <numberValue>0.0</numberValue>
                     </defaultValue>
-                    <fieldText>Men&apos;s College Club (Small)</fieldText>
+                    <fieldText>Men&apos;s Open</fieldText>
                     <fieldType>InputField</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>true</isRequired>
                     <scale>0</scale>
                 </fields>
                 <fields>
-                    <name>Mens_College_Social</name>
+                    <name>Mens_Social</name>
                     <dataType>Number</dataType>
                     <defaultValue>
                         <numberValue>0.0</numberValue>
                     </defaultValue>
-                    <fieldText>Men&apos;s College Social</fieldText>
+                    <fieldText>Men&apos;s Social</fieldText>
                     <fieldType>InputField</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>true</isRequired>
                     <scale>0</scale>
                 </fields>
                 <fields>
-                    <name>Womens_College</name>
+                    <name>Mens_EGU</name>
                     <dataType>Number</dataType>
                     <defaultValue>
                         <numberValue>0.0</numberValue>
                     </defaultValue>
-                    <fieldText>Women&apos;s College</fieldText>
+                    <fieldText>Men&apos;s EGU</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <scale>0</scale>
+                </fields>
+                <fields>
+                    <name>Mens_NSCS</name>
+                    <dataType>Number</dataType>
+                    <defaultValue>
+                        <numberValue>0.0</numberValue>
+                    </defaultValue>
+                    <fieldText>Men&apos;s NSCS</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <scale>0</scale>
+                </fields>
+                <fields>
+                    <name>Womens_Club</name>
+                    <dataType>Number</dataType>
+                    <defaultValue>
+                        <numberValue>0.0</numberValue>
+                    </defaultValue>
+                    <fieldText>Women&apos;s Club</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <scale>0</scale>
+                </fields>
+                <fields>
+                    <name>Womens_Social</name>
+                    <dataType>Number</dataType>
+                    <defaultValue>
+                        <numberValue>0.0</numberValue>
+                    </defaultValue>
+                    <fieldText>Women&apos;s Social</fieldText>
                     <fieldType>InputField</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>true</isRequired>
@@ -567,7 +593,7 @@
             <targetReference>Get_Active_Primary_Campaign_Source</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <description>Content Document Id&apos;s</description>
         <name>CD_Ids</name>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_set_Mens_and_College_to_true</fullName>
+    <active>true</active>
+    <description>Tournament - College and Tournament - Men&apos;s both cannot be set to true</description>
+    <errorConditionFormula>Tournament_College__c = true &amp;&amp; Tournament_Men_s__c = true</errorConditionFormula>
+    <errorDisplayField>IsActive</errorDisplayField>
+    <errorMessage>Tournament - College and Tournament - Men&apos;s both cannot be set to true</errorMessage>
+</ValidationRule>
