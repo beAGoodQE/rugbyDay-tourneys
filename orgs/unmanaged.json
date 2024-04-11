@@ -9,9 +9,6 @@
     "chatterSettings": {
       "enableChatter": true
     },
-    "experienceBundleSettings": {
-      "enableExperienceBundleMetadata": true
-    },
     "userManagementSettings": {
       "enableNewProfileUI": true
     },
