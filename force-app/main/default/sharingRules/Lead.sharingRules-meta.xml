@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingGuestRules>
+        <fullName>Lead_Guest_Sharing_College</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Lead Guest Sharing - College</description>
+        <label>Lead Guest Sharing - College</label>
+        <sharedTo>
+            <guestUser>collegiate7s</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Company</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>Lead_Guest_Sharing_Mens</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Lead Guest Sharing - Men&apos;s</description>
+        <label>Lead Guest Sharing - Men&apos;s</label>
+        <sharedTo>
+            <guestUser>summer7s</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Company</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+</SharingRules>

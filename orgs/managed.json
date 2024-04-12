@@ -1,10 +1,14 @@
 {
   "orgName": "rugbyDay-Tourneys - Managed Org",
-  "edition": "Developer",
+  "edition": "Enterprise",
   "features": ["Communities"],
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
+    },
+    "communitiesSettings": {
+      "enableNetworksEnabled": true,
+      "enableOotbProfExtUserOpsEnable": true
     },
     "chatterSettings": {
       "enableChatter": true

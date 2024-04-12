@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>57.0</apiVersion>
+    <apiVersion>58.0</apiVersion>
     <description>Used to capture online registrations for Men&apos;s and Women&apos;s 7&apos;s tournaments</description>
     <environments>Default</environments>
     <interviewLabel>Create Tournament Entry Lead - Men&apos;s {!$Flow.CurrentDateTime}</interviewLabel>
+    <isAdditionalPermissionRequiredToRun>true</isAdditionalPermissionRequiredToRun>
     <label>Create Tournament Entry Lead - Men&apos;s</label>
     <loops>
         <description>TBD</description>
@@ -576,7 +577,7 @@
             <targetReference>Get_Active_Primary_Campaign_Source</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <description>Content Document Id&apos;s</description>
         <name>CD_Ids</name>
