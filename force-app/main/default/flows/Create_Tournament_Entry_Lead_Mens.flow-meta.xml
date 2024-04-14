@@ -577,7 +577,7 @@
             <targetReference>Get_Active_Primary_Campaign_Source</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <description>Content Document Id&apos;s</description>
         <name>CD_Ids</name>
