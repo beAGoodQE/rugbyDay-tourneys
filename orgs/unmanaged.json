@@ -8,7 +8,6 @@
     },
     "communitiesSettings": {
       "enableNetworksEnabled": true
-<!--      "enableOotbProfExtUserOpsEnable": true -->
     },
     "chatterSettings": {
       "enableChatter": true
