@@ -1,0 +1,69 @@
+{
+  "appPageId" : "10a67293-77c3-4433-a854-bcae1d2c06f9",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "cd909f02-92ce-4c6f-bc3b-68d9ad9efc6a",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><img class=\"sfdcCbImage\" src=\"{!contentAsset.saratoga_sevens_invitational_colors1.1}\" alt=\"\"></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "b6ffabe5-fdab-405a-a65c-1067c81c4054",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "fbd05afb-bbb2-4d9a-a56d-67184f79243f",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><span style=\"font-size: 48px;\">2024 Summer 7's Registration Form</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "f1b3a6b6-abab-456e-a49e-e823353ea7e3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "flowArguments" : "",
+        "flowName" : "Create_Tournament_Entry_Lead_Mens"
+      },
+      "componentName" : "forceCommunity:flowCommunity",
+      "id" : "cf8dea0a-84c9-4547-b7d9-5050d0797b71",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "076a3280-b38f-49f9-bc3e-f28066bf7ed0",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "976df64b-8737-438b-80e0-e0e040b03cd1",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "319b0c2d-4e6c-4077-b7de-b1a0318dff77",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "05f5588e-d5a9-43a3-8e4f-9b92da5830c8",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

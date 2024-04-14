@@ -1,0 +1,78 @@
+{
+  "appPageId" : "bb7a8626-ad28-44e3-a506-309e4a56f477",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "c027ca36-f2c3-48be-ad47-7362fcc8e500",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><img class=\"sfdcCbImage\" src=\"{!contentAsset.X2024_Collegiate_Cup_Rugby_Sevens.1}\" alt=\"\"></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "38c40d5a-9e05-4d71-8db9-90f3f96bf6ae",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><img class=\"sfdcCbImage\" src=\"{!contentAsset.X2024_Collegiate_Cup_Rugby_Sevens6.1}\" alt=\"\" style=\"width: 1132.44px; height: 286.461px;\"></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "6c37bfdb-b4be-468d-bd6b-d750d0f1ed9e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "53711661-18ac-48fd-a863-745171f17afb",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><span style=\"font-size: 48px;\">2024 Collegiate Cup Registration Form</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "7351e7c5-555b-4287-aafa-e6c39d9fd0d8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "flowArguments" : "",
+        "flowName" : "Create_Tournament_Entry_Lead_College"
+      },
+      "componentName" : "forceCommunity:flowCommunity",
+      "id" : "acad15e9-332d-494b-ba29-b082bd7e96b8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7e087a9b-02b4-4abf-8432-14fd52604bd6",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "48921710-dc37-4d5f-9411-9762f269b8fc",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "04d4800f-6c35-4b7e-b2d6-3ac6b3965bc6",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e1241cba-f951-4979-9e09-8f7491805746",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

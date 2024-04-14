@@ -3,7 +3,7 @@ project:
     name: rugbyDay
     package:
         name: rugbyDay
-        api_version: '59.0'
+        api_version: '60.0'
     git:
         default_branch: 'main'
     source_format: sfdx

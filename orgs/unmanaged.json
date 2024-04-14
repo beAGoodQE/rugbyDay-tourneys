@@ -1,7 +1,7 @@
 {
   "orgName": "rugbyDay-Tourneys - Unmanaged Org",
   "edition": "Enterprise",
-  "features": ["Communities"],
+  "features": ["Communities", "TooManyRequests",  "ExpEnhancedFeaturesNonProv"],
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
@@ -12,6 +12,9 @@
     },
     "chatterSettings": {
       "enableChatter": true
+    },
+    "experienceBundleSettings": {
+      "enableExperienceBundleMetadata": true
     },
     "userManagementSettings": {
       "enableNewProfileUI": true
