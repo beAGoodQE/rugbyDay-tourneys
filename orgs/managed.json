@@ -7,8 +7,8 @@
       "enableS1DesktopEnabled": true
     },
     "communitiesSettings": {
-      "enableNetworksEnabled": true,
-      "enableOotbProfExtUserOpsEnable": true
+      "enableNetworksEnabled": true
+<!--      "enableOotbProfExtUserOpsEnable": true -->
     },
     "chatterSettings": {
       "enableChatter": true
