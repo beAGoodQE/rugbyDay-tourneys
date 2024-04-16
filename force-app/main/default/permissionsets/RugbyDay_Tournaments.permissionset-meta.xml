@@ -369,8 +369,10 @@
         <recordType>Opportunity.Dues</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
+<!-- 
     <recordTypeVisibilities>
         <recordType>Opportunity.Tournament_Fee</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
+-->
 </PermissionSet>

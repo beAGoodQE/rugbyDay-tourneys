@@ -8,11 +8,13 @@
     <columns>OPPORTUNITY.AMOUNT</columns>
     <columns>CORE.USERS.ALIAS</columns>
     <filterScope>Everything</filterScope>
+<!--
     <filters>
         <field>OPPORTUNITY.RECORDTYPE</field>
         <operation>equals</operation>
         <value>Opportunity.Tournament_Fee</value>
     </filters>
+-->
     <filters>
         <field>Primary_Campaign_Formula__c</field>
         <operation>equals</operation>

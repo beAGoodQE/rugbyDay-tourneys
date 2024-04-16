@@ -313,10 +313,12 @@
     <layoutAssignments>
         <layout>Lead-Lead Layout</layout>
     </layoutAssignments>
+   <!--
     <layoutAssignments>
         <layout>Lead-Lead Layout</layout>
         <recordType>Lead.Tournament_Lead</recordType>
     </layoutAssignments>
+    -->
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
@@ -423,12 +425,14 @@
         <recordType>Account.Default</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
+    <!--
     <recordTypeVisibilities>
         <default>true</default>
         <personAccountDefault>true</personAccountDefault>
         <recordType>Lead.Tournament_Lead</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
+    -->
     <tabVisibilities>
         <tab>standard-Lead</tab>
         <visibility>Hidden</visibility>
