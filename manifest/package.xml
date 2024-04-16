@@ -12,5 +12,13 @@
         <members>*</members>
         <name>Network</name>
     </types>
+    <types>
+        <members>Opportunity</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>StandardValueSet</name>
+    </types>    
     <version>60.0</version>
 </Package>

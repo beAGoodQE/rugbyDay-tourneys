@@ -1,4 +1,4 @@
-minimum_cumulusci_version: '3.76.0'
+minimum_cumulusci_version: '3.86.0'
 project:
     name: rugbyDay
     package:
@@ -11,6 +11,18 @@ project:
         - github: "https://github.com/beAGoodQE/rugbyDay"
 
 tasks:
+    add_standard_value_set_entries:
+        options:
+            api_names:
+                - OpportunityStage
+            entries:
+                - label: Invoice Sent
+                  fullName: Invoice Sent
+                  closed: 'False'
+                  forecastCategory: 'Pipeline'
+                  probability: 85
+                  won: 'False'
+
     run_tests:
         options:
             required_org_code_coverage_percent: 75
@@ -22,6 +34,12 @@ flows:
                 task: create_package_version
                 options:
                     create_unlocked_dependency_packages: True
+
+    config_dev:
+        steps:
+            3:
+                task: add_standard_value_set_entries
+
 
 orgs:
     scratch:
