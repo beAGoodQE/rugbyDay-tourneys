@@ -1,4 +1,4 @@
-# rugbyDay:
+# rugbyDay
 Rugby on Salesforce!
 
 # Project Setup
