@@ -1,7 +1,7 @@
 # rugbyDay:
 Rugby on Salesforce!
 
-# Project Setup
+# Project Setup:
 This project is preconfigured with D2X for a comprehensive Development-to-Delivery Experience including CI/CD using GitHub Actions and development environments using GitHub Codespaces.
 
 D2X requires some minimal configuration of your GitHub organization or repository to complete the setup and enable builds:
@@ -15,5 +15,5 @@ You can check the status of your setup by monitoring the status of the following
 * [![Beta Test](https://github.com/beAGoodQE/rugbyDay/actions/workflows/beta.yml/badge.svg)](https://github.com/beAGoodQE/rugbyDay/actions/workflows/beta.yml)
 * [![Production Release](https://github.com/beAGoodQE/rugbyDay/actions/workflows/release.yml/badge.svg)](https://github.com/beAGoodQE/rugbyDay/actions/workflows/release.yml)
 
-# Metadata Tracker
+# Metadata Tracker:
 https://docs.google.com/spreadsheets/d/1TUoZN5E0Xw13C6C1YOMfzxBDUav_dL4MQFb_9W338d0/edit#gid=0
