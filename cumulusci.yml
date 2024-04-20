@@ -1,4 +1,4 @@
-minimum_cumulusci_version: '3.76.0'
+minimum_cumulusci_version: '3.80.0'
 project:
     name: rugbyDay
     package:
@@ -9,37 +9,77 @@ project:
     source_format: sfdx
     dependencies:
         - github: "https://github.com/beAGoodQE/rugbyDay"
+    
+sources:
+    rugbyDay:
+        github: "https://github.com/beAGoodQE/rugbyDay"
 
 tasks:
+
     add_standard_value_set_entries:
         options:
             api_names:
-                - OpportunityStage
+                - LeadStatus
             entries:
                 - label: Invoice Sent
-                  fullName: Invoice Sent
-                  closed: 'False'
+                  converted: False
+                  closed: False
                   forecastCategory: 'Pipeline'
+                  fullName: Invoice Sent
                   probability: 85
-                  won: 'False'
+                  won: False
+                - label: Invoice Paid
+                  converted: False
+                  closed: True
+                  forecastCategory: 'Pipeline'
+                  fullName: Invoice Paid
+                  probability: 100
+                  won: True
+                - label: Registered Online
+                  converted: True
+                  closed: False
+                  forecastCategory: 'Pipeline'
+                  fullName: Registered Online
+                  probability: 75
+                  won: False
+                - label: Verbal Commitment
+                  converted: False
+                  closed: False
+                  forecastCategory: 'Pipeline'
+                  fullName: Verbal Commitment
+                  probability: 60
+                  won: False
 
     run_tests:
         options:
             required_org_code_coverage_percent: 75
 
 flows:
+
+    dependencies:
+        steps:
+            3:
+                task: rugbyDay:add_standard_value_set_entries
+            4:
+                task: add_standard_value_set_entries
+
+#    deploy_unmanaged:
+#        steps:
+#            .9:
+#                task: add_standard_value_set_entries
+
     release_unlocked_beta:
         steps:
             1:
                 task: create_package_version
                 options:
-                    create_unlocked_dependency_packages: True
-
-    config_dev:
-        steps:
-            3:
-                task: add_standard_value_set_entries
-
+                    package_type: Unlocked
+                    package_name: $project_config.project__package__name
+                    skip_validation: True
+                    version_base: latest_github_release
+                    version_type: minor
+                    force_upload: True
+                    create_unlocked_dependency_packages: False
 
 orgs:
     scratch:
