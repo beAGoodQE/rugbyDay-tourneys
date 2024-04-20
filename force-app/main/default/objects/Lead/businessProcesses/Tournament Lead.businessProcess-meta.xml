@@ -3,11 +3,6 @@
     <fullName>Tournament Lead</fullName>
     <isActive>true</isActive>
     <values>
-        <fullName>Prospecting</fullName>
-        <default>true</default>
-    </values>
-<!--
-    <values>
         <fullName>Invoice Sent</fullName>
         <default>true</default>
     </values>
@@ -23,5 +18,4 @@
         <fullName>Verbal Commitment</fullName>
         <default>false</default>
     </values>
--->
 </BusinessProcess>
