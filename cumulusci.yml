@@ -63,13 +63,10 @@ flows:
             4:
                 task: add_standard_value_set_entries
 
-#    deploy_unmanaged:
-#        steps:
-#            .9:
-#                task: add_standard_value_set_entries
-
     release_unlocked_beta:
         steps:
+            .9:
+                task: add_standard_value_set_entries
             1:
                 task: create_package_version
                 options:
