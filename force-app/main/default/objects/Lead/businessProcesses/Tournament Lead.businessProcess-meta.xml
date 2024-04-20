@@ -18,12 +18,4 @@
         <fullName>Verbal Commitment</fullName>
         <default>false</default>
     </values>
-    <values>
-        <fullName>Closed - Converted</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Closed - Not Converted</fullName>
-        <default>false</default>
-    </values>
 </BusinessProcess>

@@ -13,16 +13,4 @@
         <label>Working - Contacted</label>
         <converted>false</converted>
     </standardValue>
-    <standardValue>
-        <fullName>Closed - Converted</fullName>
-        <default>false</default>
-        <label>Closed - Converted</label>
-        <converted>true</converted>
-    </standardValue>
-    <standardValue>
-        <fullName>Closed - Not Converted</fullName>
-        <default>false</default>
-        <label>Closed - Not Converted</label>
-        <converted>false</converted>
-    </standardValue>
 </StandardValueSet>
