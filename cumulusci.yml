@@ -65,14 +65,12 @@ flows:
 
     release_unlocked_beta:
         steps:
-            .9:
-                task: add_standard_value_set_entries
             1:
                 task: create_package_version
                 options:
                     package_type: Unlocked
                     package_name: $project_config.project__package__name
-                    skip_validation: True
+                    skip_validation: False
                     version_base: latest_github_release
                     version_type: minor
                     force_upload: True
