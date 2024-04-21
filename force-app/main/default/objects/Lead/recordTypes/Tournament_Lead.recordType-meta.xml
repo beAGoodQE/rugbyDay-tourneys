@@ -4,27 +4,6 @@
     <active>true</active>
     <businessProcess>Tournament Lead</businessProcess>
     <label>Tournament Lead</label>
-<!-- -->
-    <picklistValues>
-        <picklist>LeadStatus</picklist>
-        <values>
-            <fullName>Invoice Sent</fullName>
-            <default>true</default>
-        </values>
-        <values>
-            <fullName>Invoice Paid</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Registered Online</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Verbal Commitment</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-<!-- -->
     <picklistValues>
         <picklist>GenderIdentity</picklist>
         <values>
