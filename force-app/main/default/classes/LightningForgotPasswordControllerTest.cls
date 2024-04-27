@@ -35,16 +35,3 @@ public with sharing class LightningForgotPasswordControllerTest {
    System.assertNotEquals(LightningForgotPasswordController.setExperienceId('testText'), null);
   }
 }
-/*
-@IsTest
-static void testSetExperienceId_Exception() {
-    // Test when an exception is thrown
-    String expId = 'yourInvalidExperienceId';
-    Test.startTest();
-    String errorMessage = YourClassName.setExperienceId(expId);
-    Test.stopTest();
-    
-    // Assert that an error message is returned
-    System.assertNotEquals(null, errorMessage, 'Expected error message to not be null');
-}
-*/

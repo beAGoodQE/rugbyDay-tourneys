@@ -39,4 +39,32 @@ public with sharing class LightningLoginFormControllerTest {
 
     System.assertEquals(null, errorMessage, 'Expected error message to be null');
  }
+
+  /* Verifies that null setExperienceId returns null. */
+  @IsTest
+  static void testSetExperienceIdAsNull() {
+   System.assertEquals(LightningLoginFormController.setExperienceId(null), null);
+  }
+ 
+   /* Verifies setExperienceId Exception. */
+   @IsTest
+   static void testSetExperienceIdException() {
+    System.assertNotEquals(LightningLoginFormController.setExperienceId('testText'), null);
+   }
+
+   @IsTest
+   static void testGetForgotPasswordUrl() {
+       // Create test data
+       Auth.AuthConfiguration authConfig = new Auth.AuthConfiguration();
+       authConfig.ForgotPasswordUrl = 'https://example.com/forgotpassword';
+       LightningLoginFormController.setAuthConfig(authConfig); // Assuming you have a method to set AuthConfiguration
+       
+       // Call the method under test
+       Test.startTest();
+       String forgotPasswordUrl = LightningLoginFormController.getForgotPasswordUrl();
+       Test.stopTest();
+       
+       // Assert the result
+       System.assertEquals('https://example.com/forgotpassword', forgotPasswordUrl, 'Forgot password URL should match configured value');
+   }
 }
