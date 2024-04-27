@@ -27,4 +27,16 @@ public with sharing class LightningLoginFormControllerTest {
   Auth.AuthConfiguration authConfig = LightningLoginFormController.getAuthConfig();
   System.assertNotEquals(null, authConfig);
  }
+
+ @IsTest
+ static void testLoginSuccess() {
+    // Test when login is successful
+    String username = 'test@example.com';
+    String password = 'testPassword';
+    String startUrl = '/home';
+
+    String errorMessage = LightningLoginFormController.login(username, password, startUrl);
+
+    System.assertEquals(null, errorMessage, 'Expected error message to be null');
+ }
 }
