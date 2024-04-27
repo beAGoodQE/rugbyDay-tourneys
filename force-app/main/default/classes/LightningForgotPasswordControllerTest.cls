@@ -22,4 +22,29 @@ public with sharing class LightningForgotPasswordControllerTest {
   LightningForgotPasswordController controller = new LightningForgotPasswordController();
   System.assertNotEquals(controller, null);
  }
+
+ /* Verifies that null setExperienceId returns null. */
+ @IsTest
+ static void testLightningForgotPasswordControllerSetExperienceIdAsNull() {
+  System.assertEquals(LightningForgotPasswordController.setExperienceId(null), null);
+ }
+
+  /* Verifies setExperienceId Exception. */
+  @IsTest
+  static void testLightningForgotPasswordControllerSetExperienceIdException() {
+   System.assertNotEquals(LightningForgotPasswordController.setExperienceId('testText'), null);
+  }
 }
+/*
+@IsTest
+static void testSetExperienceId_Exception() {
+    // Test when an exception is thrown
+    String expId = 'yourInvalidExperienceId';
+    Test.startTest();
+    String errorMessage = YourClassName.setExperienceId(expId);
+    Test.stopTest();
+    
+    // Assert that an error message is returned
+    System.assertNotEquals(null, errorMessage, 'Expected error message to not be null');
+}
+*/
